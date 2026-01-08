@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { ChevronDown } from "lucide-react";
+import chichoLogo from "@/assets/chicho-logo.png";
 
 const Hero = () => {
   const scrollToMenu = () => {
@@ -41,30 +42,45 @@ const Hero = () => {
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6, type: "spring" }}
+          className="flex flex-col items-center"
         >
-          {/* Main title */}
+          {/* Title above logo */}
           <motion.h1
-            className="font-architects text-5xl md:text-7xl lg:text-8xl text-gradient mb-6"
-            animate={{ 
-              textShadow: [
-                "0 0 20px hsl(var(--primary) / 0.3)",
-                "0 0 40px hsl(var(--primary) / 0.5)",
-                "0 0 20px hsl(var(--primary) / 0.3)",
-              ]
-            }}
-            transition={{ duration: 3, repeat: Infinity }}
-          >
-            La Tapizzería
-          </motion.h1>
-          
-          <motion.p
-            className="font-architects text-3xl md:text-4xl text-primary mb-4"
-            initial={{ opacity: 0, y: 20 }}
+            className="font-architects text-4xl md:text-5xl lg:text-6xl mb-6"
+            initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.3 }}
+            transition={{ delay: 0.2 }}
           >
-            de Chicho
-          </motion.p>
+            <span className="italic font-bold text-gradient">La Tapizzería</span>
+            {" "}
+            <span className="font-bold text-primary">de Chicho</span>
+          </motion.h1>
+
+          {/* Large Chicho Logo */}
+          <motion.div
+            className="relative mb-8"
+            animate={{ 
+              y: [0, -10, 0],
+            }}
+            transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+          >
+            <motion.img
+              src={chichoLogo}
+              alt="Chicho - La Tapizzería"
+              className="w-48 h-48 md:w-64 md:h-64 lg:w-80 lg:h-80 object-contain drop-shadow-2xl"
+              whileHover={{ scale: 1.05, rotate: 5 }}
+              transition={{ type: "spring", stiffness: 300 }}
+            />
+            {/* Welcome bubble */}
+            <motion.div
+              className="absolute -right-4 top-4 md:-right-8 md:top-8 bg-chicho-gold text-chicho-dark px-4 py-2 rounded-full font-patrick text-sm md:text-base font-bold shadow-lg"
+              initial={{ opacity: 0, scale: 0 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ delay: 0.8, type: "spring" }}
+            >
+              ¡Bienvenido!
+            </motion.div>
+          </motion.div>
 
           <motion.p
             className="font-patrick text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto"
@@ -74,13 +90,13 @@ const Hero = () => {
           >
             Pizzas artesanales, hamburguesas gourmet, tapas y mucho más...
             <br />
-            <span className="text-primary">¡Todo hecho con amor!</span>
+            <span className="text-primary font-bold">¡Todo hecho con amor!</span>
           </motion.p>
 
           {/* CTA Button */}
           <motion.button
             onClick={scrollToMenu}
-            className="sketch-border px-8 py-4 bg-primary text-primary-foreground font-architects text-xl hover:bg-primary/90 transition-colors animate-pulse-glow"
+            className="sketch-border px-8 py-4 bg-primary text-primary-foreground font-architects text-xl font-bold hover:bg-primary/90 transition-colors animate-pulse-glow"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.7 }}
