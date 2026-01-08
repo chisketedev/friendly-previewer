@@ -1,7 +1,8 @@
 import { Phone, MapPin } from "lucide-react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { PHONE_NUMBER, RESTAURANT_NAME } from "@/data/menuData";
+import { PHONE_NUMBER } from "@/data/menuData";
+import chichoLogo from "@/assets/chicho-logo.png";
 
 const Header = () => {
   return (
@@ -15,21 +16,20 @@ const Header = () => {
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
             >
-              {/* Chicho mascot emoji placeholder */}
-              <motion.div
-                className="text-4xl"
+              {/* Chicho mascot */}
+              <motion.img
+                src={chichoLogo}
+                alt="Chicho"
+                className="w-10 h-10 md:w-12 md:h-12 object-contain"
                 animate={{ rotate: [0, 5, -5, 0] }}
                 transition={{ duration: 4, repeat: Infinity }}
-              >
-                👨‍🍳
-              </motion.div>
+              />
               <div>
-                <h1 className="font-architects text-xl md:text-2xl text-primary leading-tight">
-                  {RESTAURANT_NAME}
+                <h1 className="font-architects text-lg md:text-xl leading-tight">
+                  <span className="italic font-bold text-gradient">La Tapizzería</span>
+                  {" "}
+                  <span className="font-bold text-primary">de Chicho</span>
                 </h1>
-                <p className="font-patrick text-xs text-muted-foreground hidden sm:block">
-                  Pizzería & Tapas Artesanales
-                </p>
               </div>
             </motion.div>
           </Link>
