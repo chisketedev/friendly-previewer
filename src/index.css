@@ -2,95 +2,94 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* La Tapizzería de Chicho - Design System */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 270 30% 12%;
+    --foreground: 45 100% 90%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 270 25% 18%;
+    --card-foreground: 45 100% 90%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 270 25% 15%;
+    --popover-foreground: 45 100% 90%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 45 100% 55%;
+    --primary-foreground: 270 30% 12%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 270 40% 25%;
+    --secondary-foreground: 45 100% 90%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 270 20% 22%;
+    --muted-foreground: 270 10% 60%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 280 60% 45%;
+    --accent-foreground: 45 100% 95%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 270 30% 30%;
+    --input: 270 30% 25%;
+    --ring: 45 100% 55%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
 
-    --sidebar-background: 0 0% 98%;
+    /* Custom colors */
+    --chicho-purple: 270 30% 15%;
+    --chicho-purple-light: 270 40% 25%;
+    --chicho-gold: 45 100% 55%;
+    --chicho-gold-light: 45 100% 70%;
+    --chicho-cream: 45 50% 95%;
 
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-background: 270 30% 10%;
+    --sidebar-foreground: 45 100% 90%;
+    --sidebar-primary: 45 100% 55%;
+    --sidebar-primary-foreground: 270 30% 12%;
+    --sidebar-accent: 270 40% 25%;
+    --sidebar-accent-foreground: 45 100% 90%;
+    --sidebar-border: 270 30% 25%;
+    --sidebar-ring: 45 100% 55%;
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    --background: 270 30% 8%;
+    --foreground: 45 100% 92%;
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 270 25% 12%;
+    --card-foreground: 45 100% 92%;
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 270 25% 10%;
+    --popover-foreground: 45 100% 92%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 45 100% 55%;
+    --primary-foreground: 270 30% 8%;
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 270 40% 20%;
+    --secondary-foreground: 45 100% 92%;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 270 20% 18%;
+    --muted-foreground: 270 10% 55%;
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 280 60% 40%;
+    --accent-foreground: 45 100% 95%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --border: 270 30% 25%;
+    --input: 270 30% 20%;
+    --ring: 45 100% 55%;
+
+    --sidebar-background: 270 30% 6%;
+    --sidebar-foreground: 45 100% 92%;
+    --sidebar-primary: 45 100% 55%;
+    --sidebar-primary-foreground: 270 30% 8%;
+    --sidebar-accent: 270 40% 20%;
+    --sidebar-accent-foreground: 45 100% 92%;
+    --sidebar-border: 270 30% 20%;
+    --sidebar-ring: 45 100% 55%;
   }
 }
 
@@ -100,6 +99,178 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Patrick Hand', cursive;
   }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Architects Daughter', cursive;
+  }
+}
+
+@layer components {
+  /* Sketch border effect */
+  .sketch-border {
+    position: relative;
+    border: 3px solid hsl(var(--primary));
+    border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px;
+    box-shadow: 
+      2px 2px 0 hsl(var(--primary) / 0.3),
+      inset 0 0 20px hsl(var(--primary) / 0.1);
+  }
+
+  .sketch-border-subtle {
+    position: relative;
+    border: 2px solid hsl(var(--border));
+    border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px;
+  }
+
+  /* Zone card styling */
+  .zone-card {
+    @apply relative overflow-hidden cursor-pointer transition-all duration-300;
+    background: linear-gradient(
+      145deg,
+      hsl(var(--card)) 0%,
+      hsl(var(--chicho-purple-light)) 100%
+    );
+    border: 3px solid hsl(var(--primary) / 0.6);
+    border-radius: 20px 5px 20px 5px;
+  }
+
+  .zone-card:hover {
+    transform: translateY(-8px) rotate(1deg);
+    border-color: hsl(var(--primary));
+    box-shadow: 
+      0 20px 40px hsl(var(--primary) / 0.2),
+      0 0 30px hsl(var(--primary) / 0.1);
+  }
+
+  /* Handwritten text effect */
+  .handwritten {
+    font-family: 'Architects Daughter', cursive;
+    letter-spacing: 0.02em;
+  }
+
+  .handwritten-body {
+    font-family: 'Patrick Hand', cursive;
+  }
+
+  /* Floating animation */
+  @keyframes float {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    25% { transform: translateY(-10px) rotate(2deg); }
+    50% { transform: translateY(-5px) rotate(-1deg); }
+    75% { transform: translateY(-15px) rotate(1deg); }
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  /* Wiggle animation */
+  @keyframes wiggle {
+    0%, 100% { transform: rotate(-3deg); }
+    50% { transform: rotate(3deg); }
+  }
+
+  .animate-wiggle {
+    animation: wiggle 0.5s ease-in-out;
+  }
+
+  /* Pulse glow animation */
+  @keyframes pulse-glow {
+    0%, 100% { 
+      box-shadow: 0 0 20px hsl(var(--primary) / 0.4);
+    }
+    50% { 
+      box-shadow: 0 0 40px hsl(var(--primary) / 0.6), 0 0 60px hsl(var(--primary) / 0.3);
+    }
+  }
+
+  .animate-pulse-glow {
+    animation: pulse-glow 2s ease-in-out infinite;
+  }
+
+  /* Phone button animation */
+  @keyframes ring {
+    0%, 100% { transform: rotate(0deg); }
+    10% { transform: rotate(15deg); }
+    20% { transform: rotate(-15deg); }
+    30% { transform: rotate(10deg); }
+    40% { transform: rotate(-10deg); }
+    50% { transform: rotate(0deg); }
+  }
+
+  .animate-ring {
+    animation: ring 2s ease-in-out infinite;
+  }
+
+  /* Gradient text */
+  .text-gradient {
+    background: linear-gradient(
+      135deg, 
+      hsl(var(--primary)) 0%, 
+      hsl(var(--chicho-gold-light)) 50%,
+      hsl(var(--primary)) 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Menu table styling */
+  .menu-table {
+    @apply w-full;
+  }
+
+  .menu-table th {
+    @apply text-primary font-bold text-lg py-3 px-4 text-left border-b-2 border-primary/30;
+    font-family: 'Architects Daughter', cursive;
+  }
+
+  .menu-table td {
+    @apply py-3 px-4 border-b border-border/50;
+  }
+
+  .menu-table tr:hover td {
+    @apply bg-secondary/30;
+  }
+
+  /* Price badge */
+  .price-badge {
+    @apply inline-block px-3 py-1 rounded-full text-sm font-bold;
+    background: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--chicho-gold-light)) 100%);
+    color: hsl(var(--primary-foreground));
+  }
+
+  /* Section divider */
+  .section-divider {
+    @apply w-full h-1 my-8 rounded-full;
+    background: linear-gradient(
+      90deg,
+      transparent 0%,
+      hsl(var(--primary) / 0.5) 20%,
+      hsl(var(--primary)) 50%,
+      hsl(var(--primary) / 0.5) 80%,
+      transparent 100%
+    );
+  }
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(var(--background));
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--primary) / 0.5);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--primary) / 0.7);
 }
