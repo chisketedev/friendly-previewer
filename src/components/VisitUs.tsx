@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { Clock, Phone, MapPin, Bike } from "lucide-react";
 
 const VisitUs = () => {
-  const phoneNumber = "tel:+34653711696";
+  const phoneNumber = "tel:+34968742743";
 
   return (
     <section className="py-16 px-4 bg-secondary/20">
@@ -13,7 +13,7 @@ const VisitUs = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          ¡Ven a visitarnos!
+          Tú eliges
         </motion.h2>
 
         <div className="grid md:grid-cols-3 gap-6">
@@ -72,7 +72,7 @@ const VisitUs = () => {
                 className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-4 py-2 rounded-full font-patrick hover:bg-primary/90 transition-colors"
               >
                 <Phone className="w-4 h-4" />
-                653 711 696
+                968 742 743
               </a>
               <p className="text-muted-foreground text-sm">
                 ¡Listo en minutos!
@@ -102,7 +102,7 @@ const VisitUs = () => {
                 className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-4 py-2 rounded-full font-patrick hover:bg-primary/90 transition-colors"
               >
                 <Phone className="w-4 h-4" />
-                653 711 696
+                968 742 743
               </a>
               <p className="text-muted-foreground text-sm">
                 Consulta zona de reparto
