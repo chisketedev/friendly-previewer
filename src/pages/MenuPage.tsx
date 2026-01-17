@@ -70,18 +70,16 @@ const MenuPage = () => {
                 {category.items.map((item, itemIndex) => (
                   <motion.div
                     key={item.name}
-                    className="flex flex-wrap justify-between items-start gap-2 p-4 rounded-lg bg-card/50 hover:bg-card transition-colors border border-border/50"
+                    className="flex flex-col p-4 rounded-lg bg-card/50 hover:bg-card transition-colors border border-border/50"
                     initial={{ opacity: 0, x: -20 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ delay: catIndex * 0.1 + itemIndex * 0.05 }}
                   >
-                    <div className="flex-1 min-w-0">
-                      <h3 className="font-architects text-xl text-foreground">{item.name}</h3>
-                      {item.description && (
-                        <p className="font-patrick text-muted-foreground text-sm mt-1">{item.description}</p>
-                      )}
-                    </div>
-                    <div className="flex gap-2 flex-wrap justify-end">
+                    <h3 className="font-architects text-xl text-foreground font-bold">{item.name}</h3>
+                    {item.description && (
+                      <p className="font-patrick text-muted-foreground text-sm mt-2 font-semibold">{item.description}</p>
+                    )}
+                    <div className="flex gap-2 flex-wrap mt-3">
                       {item.prices ? (
                         <>
                           <span className="price-badge text-xs">P: {item.prices.small?.toFixed(2)}€</span>
