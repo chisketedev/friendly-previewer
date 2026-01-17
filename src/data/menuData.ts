@@ -22,6 +22,7 @@ export interface MenuZone {
   emoji: string;
   description: string;
   color: string;
+  image: string;
   categories: MenuCategory[];
 }
 
@@ -33,6 +34,7 @@ export const menuZones: MenuZone[] = [
     emoji: "🍤",
     description: "Para empezar con buen pie",
     color: "from-rose-500 to-pink-600",
+    image: "https://images.unsplash.com/photo-1541014741259-de529411b96a?w=400&h=300&fit=crop",
     categories: [
       {
         name: "Entrantes",
@@ -54,6 +56,7 @@ export const menuZones: MenuZone[] = [
     emoji: "🍕",
     description: "Pizzas artesanales con masa casera",
     color: "from-orange-500 to-red-600",
+    image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400&h=300&fit=crop",
     categories: [
       {
         name: "Pizzas Clásicas",
@@ -81,6 +84,7 @@ export const menuZones: MenuZone[] = [
     emoji: "🍔",
     description: "Burgers artesanales",
     color: "from-amber-600 to-red-700",
+    image: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400&h=300&fit=crop",
     categories: [
       {
         name: "Hamburguesas",
@@ -100,6 +104,7 @@ export const menuZones: MenuZone[] = [
     emoji: "🍟",
     description: "Patatas locas y raciones",
     color: "from-yellow-400 to-amber-500",
+    image: "https://images.unsplash.com/photo-1630384060421-cb20d0e0649d?w=400&h=300&fit=crop",
     categories: [
       {
         name: "Patatas",
@@ -119,6 +124,7 @@ export const menuZones: MenuZone[] = [
     emoji: "🥖",
     description: "Bocatas tradicionales",
     color: "from-amber-400 to-yellow-600",
+    image: "https://images.unsplash.com/photo-1509722747041-616f39b57569?w=400&h=300&fit=crop",
     categories: [
       {
         name: "Bocadillos",
@@ -138,6 +144,7 @@ export const menuZones: MenuZone[] = [
     emoji: "🌭",
     description: "Hot dogs al estilo Chicho",
     color: "from-red-500 to-orange-600",
+    image: "https://images.unsplash.com/photo-1612392062631-94af99e4d0e7?w=400&h=300&fit=crop",
     categories: [
       {
         name: "Perritos",
@@ -156,6 +163,7 @@ export const menuZones: MenuZone[] = [
     emoji: "🥪",
     description: "Sándwiches variados",
     color: "from-green-500 to-emerald-600",
+    image: "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?w=400&h=300&fit=crop",
     categories: [
       {
         name: "Sándwiches",
@@ -174,6 +182,7 @@ export const menuZones: MenuZone[] = [
     emoji: "🍝",
     description: "Pasta fresca italiana",
     color: "from-yellow-500 to-orange-500",
+    image: "https://images.unsplash.com/photo-1563379926898-05f4575a45d8?w=400&h=300&fit=crop",
     categories: [
       {
         name: "Pasta",
@@ -193,6 +202,7 @@ export const menuZones: MenuZone[] = [
     emoji: "🍽️",
     description: "Platos combinados completos",
     color: "from-indigo-500 to-purple-600",
+    image: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&h=300&fit=crop",
     categories: [
       {
         name: "Platos Combinados",
@@ -212,6 +222,7 @@ export const menuZones: MenuZone[] = [
     emoji: "🥩",
     description: "Carnes a la brasa",
     color: "from-red-600 to-rose-700",
+    image: "https://images.unsplash.com/photo-1544025162-d76694265947?w=400&h=300&fit=crop",
     categories: [
       {
         name: "Carnes",
@@ -231,6 +242,7 @@ export const menuZones: MenuZone[] = [
     emoji: "🐟",
     description: "Del mar a tu mesa",
     color: "from-cyan-500 to-blue-600",
+    image: "https://images.unsplash.com/photo-1615141982883-c7ad0e69fd62?w=400&h=300&fit=crop",
     categories: [
       {
         name: "Pescados",
@@ -250,6 +262,7 @@ export const menuZones: MenuZone[] = [
     emoji: "🍰",
     description: "Dulces y helados",
     color: "from-pink-400 to-purple-500",
+    image: "https://images.unsplash.com/photo-1488477181946-6428a0291777?w=400&h=300&fit=crop",
     categories: [
       {
         name: "Postres",

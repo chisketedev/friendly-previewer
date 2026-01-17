@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import ZoneVisuals from "./ZoneVisuals";
 import { MenuZone } from "@/data/menuData";
 
 interface ZoneCardProps {
@@ -11,8 +10,8 @@ interface ZoneCardProps {
 const ZoneCard = ({ zone, index }: ZoneCardProps) => {
   return (
     <motion.div
-      initial={{ opacity: 0, y: 50, rotate: -5 }}
-      whileInView={{ opacity: 1, y: 0, rotate: 0 }}
+      initial={{ opacity: 0, y: 50, scale: 0.9 }}
+      whileInView={{ opacity: 1, y: 0, scale: 1 }}
       viewport={{ once: true, margin: "-50px" }}
       transition={{ 
         duration: 0.5, 
@@ -22,32 +21,24 @@ const ZoneCard = ({ zone, index }: ZoneCardProps) => {
       }}
     >
       <Link to={`/menu/${zone.slug}`}>
-        <div className="zone-card group p-6 h-full">
-          {/* Visual illustration */}
-          <div className="w-24 h-24 mx-auto mb-4">
-            <ZoneVisuals zoneId={zone.id} />
+        <div className="group relative overflow-hidden rounded-2xl bg-background/80 backdrop-blur-sm border-2 border-chicho-gold/30 hover:border-chicho-gold transition-all duration-300 hover:shadow-[0_0_30px_rgba(212,175,55,0.3)]">
+          {/* Food image */}
+          <div className="relative h-40 overflow-hidden">
+            <img 
+              src={zone.image} 
+              alt={zone.name}
+              className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+            />
+            {/* Dark overlay for text readability */}
+            <div className="absolute inset-0 bg-gradient-to-t from-background via-background/50 to-transparent" />
           </div>
           
-          {/* Zone name */}
-          <h3 className="font-architects text-2xl text-primary text-center mb-2 group-hover:text-chicho-gold-light transition-colors">
-            {zone.name}
-          </h3>
-          
-          {/* Description */}
-          <p className="text-muted-foreground text-center text-sm font-patrick">
-            {zone.description}
-          </p>
-          
-          {/* Hover indicator */}
-          <motion.div
-            className="mt-4 text-center opacity-0 group-hover:opacity-100 transition-opacity"
-            initial={{ y: 10 }}
-            whileHover={{ y: 0 }}
-          >
-            <span className="text-primary font-architects text-sm">
-              Ver menú →
-            </span>
-          </motion.div>
+          {/* Zone name with neon effect */}
+          <div className="relative px-4 pb-6 -mt-8">
+            <h3 className="font-architects text-3xl md:text-4xl text-center neon-text">
+              {zone.name}
+            </h3>
+          </div>
         </div>
       </Link>
     </motion.div>
