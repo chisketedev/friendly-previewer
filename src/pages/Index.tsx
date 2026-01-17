@@ -4,10 +4,12 @@ import StickmanWorld from "@/components/stickman/StickmanWorld";
 import VisitUs from "@/components/VisitUs";
 import Footer from "@/components/Footer";
 import FloatingCallButton from "@/components/FloatingCallButton";
+import FoodPatternBackground from "@/components/FoodPatternBackground";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background relative">
+      <FoodPatternBackground />
       <Header />
       <main>
         <Hero />
