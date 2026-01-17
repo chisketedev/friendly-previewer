@@ -1,4 +1,4 @@
-import { Phone, MapPin } from "lucide-react";
+import { Phone } from "lucide-react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { PHONE_NUMBER } from "@/data/menuData";
@@ -34,30 +34,18 @@ const Header = () => {
             </motion.div>
           </Link>
 
-          {/* Contact info */}
-          <div className="flex items-center gap-4">
-            {/* Location - hidden on very small screens */}
-            <motion.div
-              className="hidden md:flex items-center gap-2 text-muted-foreground"
-              whileHover={{ color: "hsl(var(--primary))" }}
-            >
-              <MapPin className="w-4 h-4" />
-              <span className="font-patrick text-sm">Tu barrio favorito</span>
-            </motion.div>
-
-            {/* Phone */}
-            <motion.a
-              href={`tel:${PHONE_NUMBER.replace(/\s/g, "")}`}
-              className="flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 hover:bg-primary/20 transition-colors"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              <Phone className="w-4 h-4 text-primary" />
-              <span className="font-patrick text-primary font-bold text-sm md:text-base">
-                {PHONE_NUMBER}
-              </span>
-            </motion.a>
-          </div>
+          {/* Phone */}
+          <motion.a
+            href="tel:968742743"
+            className="flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 hover:bg-primary/20 transition-colors"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            <Phone className="w-4 h-4 text-primary" />
+            <span className="font-patrick text-primary font-bold text-sm md:text-base whitespace-nowrap">
+              968 742 743
+            </span>
+          </motion.a>
         </div>
       </div>
     </header>
