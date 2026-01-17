@@ -295,10 +295,17 @@ export const menuZones: MenuZone[] = [
       {
         name: "Bocadillos",
         items: [
-          { name: "Jamón Serrano", price: 5.00 },
-          { name: "Jamón y Queso", price: 4.50 },
-          { name: "Lomo con Queso", price: 5.50 },
-          { name: "Pepito de Ternera", price: 6.00 },
+          { name: "Trifásico", description: "Lomo, bacón, queso", price: 5.00 },
+          { name: "Serranito", description: "Lomo, jamón serrano a la plancha, pimiento frito", price: 5.00 },
+          { name: "Catalana", description: "Pan tostado, ajo, aceite, tomate, jamón serrano", price: 5.00 },
+          { name: "Don pepito", description: "Ternera a la plancha, mahonesa", price: 6.00 },
+          { name: "Vegetal", description: "Tomate, lechuga, atún, huevo duro, mahonesa", price: 6.00 },
+          { name: "Navarro", description: "Atún, anchoas, pimiento morrón", price: 5.00 },
+          { name: "Astur", description: "Carne de chorizo, huevo frito", price: 5.00 },
+          { name: "Sabroso", description: "Tortilla de queso, bacón, tomate", price: 6.00 },
+          { name: "Mallorquín", description: "Sobrasada, queso (bocadillo gratinado)", price: 5.00 },
+          { name: "Madrileño", description: "Calamares a la romana, mahonesa", price: 6.00 },
+          { name: "Crujiente", description: "Pollo adobado rebozado, mahonesa", price: 6.00 },
         ]
       }
     ]
@@ -315,9 +322,9 @@ export const menuZones: MenuZone[] = [
       {
         name: "Perritos",
         items: [
-          { name: "Perrito Clásico", description: "Salchicha, ketchup, mostaza", price: 4.50 },
-          { name: "Perrito Completo", description: "Con bacon, queso, cebolla frita", price: 5.50 },
-          { name: "Perrito BBQ", description: "Salsa BBQ, bacon, jalapeños", price: 5.50 },
+          { name: "Normal", description: "Tomate, lechuga, cebolla", price: 3.00 },
+          { name: "Queso", description: "Tomate, lechuga, cebolla, queso", price: 3.50 },
+          { name: "Especial", description: "Tomate, lechuga, cebolla, queso, bacón", price: 4.00 },
         ]
       }
     ]
@@ -334,9 +341,9 @@ export const menuZones: MenuZone[] = [
       {
         name: "Sándwiches",
         items: [
-          { name: "Sándwich Mixto", price: 3.50 },
-          { name: "Sándwich Vegetal", price: 4.50 },
-          { name: "Sándwich Club", description: "Pollo, bacon, huevo, lechuga, tomate", price: 6.50 },
+          { name: "Normal", description: "Tomate, lechuga, cebolla", price: 3.00 },
+          { name: "Queso", description: "Tomate, lechuga, cebolla, queso", price: 3.50 },
+          { name: "Especial", description: "Tomate, lechuga, cebolla, queso, bacón", price: 4.00 },
         ]
       }
     ]
@@ -351,12 +358,23 @@ export const menuZones: MenuZone[] = [
     image: "https://images.unsplash.com/photo-1563379926898-05f4575a45d8?w=400&h=300&fit=crop",
     categories: [
       {
-        name: "Pasta",
+        name: "Macarrones y Spaguetis",
         items: [
-          { name: "Espaguetis Boloñesa", description: "Salsa de carne casera", price: 8.50 },
-          { name: "Espaguetis Carbonara", description: "Nata, bacon, parmesano", price: 8.50 },
-          { name: "Macarrones Gratinados", description: "Con bechamel y queso fundido", price: 8.00 },
-          { name: "Lasaña Casera", description: "Capas de pasta, carne y bechamel", price: 9.50 },
+          { name: "Atún", description: "Salsa de tomate, atún", price: 6.50 },
+          { name: "Bolognesa", description: "Salsa de tomate, carne", price: 6.50 },
+          { name: "4 Quesos", description: "Salsa de 4 quesos", price: 6.50 },
+          { name: "Carbonara", description: "Nata, champiñón, cebolla, bacón", price: 6.50 },
+          { name: "Los de Chicho", description: "Nata, pollo especiado", price: 6.50 },
+          { name: "Roquefort", description: "Nata, bacón, queso roquefort", price: 6.50 },
+          { name: "Salmón", description: "Nata, salmón fresco", price: 7.50 },
+        ]
+      },
+      {
+        name: "Especialidades",
+        items: [
+          { name: "Lasaña de carne", price: 7.00 },
+          { name: "Lasaña barbacoa", price: 7.00 },
+          { name: "Canelones de carne", price: 8.00 },
         ]
       }
     ]
@@ -371,12 +389,15 @@ export const menuZones: MenuZone[] = [
     image: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&h=300&fit=crop",
     categories: [
       {
-        name: "Platos Combinados",
+        name: "Combinados",
         items: [
-          { name: "Combinado 1", description: "Lomo, huevo, patatas, ensalada", price: 8.50 },
-          { name: "Combinado 2", description: "Pollo, patatas, ensalada, huevo", price: 8.50 },
-          { name: "Combinado 3", description: "Hamburguesa, patatas, huevo, ensalada", price: 8.50 },
-          { name: "Combinado Chicho", description: "Secreto, patatas, pimientos, huevo", price: 11.00 },
+          { name: "Combinado de lomo", description: "2 huevos fritos, patatas fritas, lomo a la plancha", price: 6.00 },
+          { name: "Combinado de salchicha", description: "2 huevos fritos, patatas fritas, salchicha a la plancha", price: 6.00 },
+          { name: "Combinado de tocino", description: "2 huevos fritos, patatas fritas, tocino a la plancha", price: 6.00 },
+          { name: "Combinado de pollo", description: "2 huevos fritos, patatas fritas, pechuga a la plancha", price: 6.00 },
+          { name: "Combinado de bacón", description: "2 huevos fritos, patatas fritas, bacón a la plancha", price: 6.00 },
+          { name: "Combinado de morcilla", description: "2 huevos fritos, patatas fritas, morcilla a la plancha", price: 6.00 },
+          { name: "Combinado de verduras", description: "2 huevos fritos, patatas fritas, pimiento rojo y verde, cebolla, calabacín, berenjena a la plancha", price: 6.00 },
         ]
       }
     ]
@@ -393,10 +414,14 @@ export const menuZones: MenuZone[] = [
       {
         name: "Carnes",
         items: [
-          { name: "Secreto Ibérico", description: "Con patatas y pimientos", price: 14.00 },
-          { name: "Entrecot de Ternera", description: "300g con guarnición", price: 16.00 },
-          { name: "Costillas BBQ", description: "Con salsa casera", price: 12.00 },
-          { name: "Pollo al Limón", description: "Con patatas asadas", price: 10.00 },
+          { name: "Solomillo de cerdo a la plancha", description: "Con patatas", price: 9.00 },
+          { name: "Solomillo de cerdo a la pimienta", description: "Con patatas", price: 9.50 },
+          { name: "Solomillo de cerdo al roquefort", description: "Con patatas", price: 9.50 },
+          { name: "Codillo de cerdo en salsa", description: "Con patatas", price: 10.00 },
+          { name: "Costillar de cerdo a la barbacoa (medio)", description: "Con patatas", price: 10.00 },
+          { name: "Costillar de cerdo a la barbacoa (entero)", description: "Con patatas", price: 18.00 },
+          { name: "Pechuga de pollo a la plancha", description: "Con patatas", price: 7.00 },
+          { name: "Berenjenas rellenas de carne", description: "Gratinadas con queso", price: 8.00 },
         ]
       }
     ]
@@ -413,10 +438,8 @@ export const menuZones: MenuZone[] = [
       {
         name: "Pescados",
         items: [
-          { name: "Calamares a la Romana", price: 8.50 },
-          { name: "Gambas al Ajillo", price: 9.50 },
-          { name: "Pescado del Día", description: "Consultar disponibilidad", price: 12.00 },
-          { name: "Pulpo a la Gallega", price: 14.00 },
+          { name: "Salmón a la plancha", description: "Con patatas", price: 10.00 },
+          { name: "Emperador a la plancha", description: "Con patatas", price: 10.00 },
         ]
       }
     ]
@@ -431,12 +454,14 @@ export const menuZones: MenuZone[] = [
     image: "https://images.unsplash.com/photo-1488477181946-6428a0291777?w=400&h=300&fit=crop",
     categories: [
       {
-        name: "Postres",
+        name: "Postres Caseros",
         items: [
-          { name: "Tarta de Queso", description: "Casera al horno", price: 4.50 },
-          { name: "Brownie con Helado", description: "Chocolate caliente", price: 5.00 },
-          { name: "Tiramisú", description: "Receta italiana", price: 4.50 },
-          { name: "Copa de Helado", description: "2 bolas a elegir", price: 3.50 },
+          { name: "Tarta de queso", price: 2.50 },
+          { name: "Mousse de chocolate", price: 2.50 },
+          { name: "Pan de calatraba", price: 2.50 },
+          { name: "Pizza de nutella y kiwi", price: 4.00 },
+          { name: "Tarta al whisky", description: "Helado", price: 2.50 },
+          { name: "Contesa", description: "Helado choco-nata", price: 2.50 },
         ]
       }
     ]
