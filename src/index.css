@@ -255,6 +255,34 @@
       transparent 100%
     );
   }
+
+  /* Neon text effect */
+  .neon-text {
+    color: hsl(var(--chicho-gold-light));
+    text-shadow: 
+      0 0 5px hsl(var(--chicho-gold-light) / 0.8),
+      0 0 10px hsl(var(--chicho-gold-light) / 0.6),
+      0 0 20px hsl(var(--chicho-gold-light) / 0.4),
+      0 0 40px hsl(var(--chicho-gold) / 0.3);
+    animation: neon-pulse 2s ease-in-out infinite alternate;
+  }
+}
+
+@keyframes neon-pulse {
+  from {
+    text-shadow: 
+      0 0 5px hsl(var(--chicho-gold-light) / 0.8),
+      0 0 10px hsl(var(--chicho-gold-light) / 0.6),
+      0 0 20px hsl(var(--chicho-gold-light) / 0.4),
+      0 0 40px hsl(var(--chicho-gold) / 0.3);
+  }
+  to {
+    text-shadow: 
+      0 0 10px hsl(var(--chicho-gold-light) / 1),
+      0 0 20px hsl(var(--chicho-gold-light) / 0.8),
+      0 0 30px hsl(var(--chicho-gold-light) / 0.6),
+      0 0 50px hsl(var(--chicho-gold) / 0.5);
+  }
 }
 
 /* Scrollbar styling */
