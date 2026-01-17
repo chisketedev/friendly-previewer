@@ -218,12 +218,36 @@ export const menuZones: MenuZone[] = [
     image: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400&h=300&fit=crop",
     categories: [
       {
-        name: "Hamburguesas",
+        name: "Clásicas",
         items: [
-          { name: "Clásica", description: "Carne 150g, lechuga, tomate, cebolla", price: 6.50 },
-          { name: "Con Queso", description: "Carne, queso cheddar fundido", price: 7.00 },
-          { name: "Bacon Burger", description: "Carne, bacon crujiente, queso", price: 7.50 },
-          { name: "Chicho Burger", description: "Doble carne, doble queso, bacon, huevo", price: 10.50 },
+          { name: "Normal", description: "Tomate, lechuga, cebolla", price: 3.50 },
+          { name: "Queso", description: "Tomate, lechuga, cebolla, queso", price: 4.00 },
+          { name: "Especial", description: "Tomate, lechuga, cebolla, queso, bacón", price: 4.50 },
+          { name: "Completa", description: "Tomate, lechuga, cebolla, queso, bacón, huevo frito", price: 5.00 },
+        ]
+      },
+      {
+        name: "Especiales",
+        items: [
+          { name: "Pollo crujiente", description: "Tomate, lechuga, mahonesa, pollo rebozado", price: 5.00 },
+          { name: "Pescado crujiente", description: "Tomate, lechuga, mahonesa, pescado rebozado", price: 5.00 },
+          { name: "Picantona", description: "Tomate, lechuga, cebolla, chipotle, queso chédar, pepinillos, 150gr paleta de cerdo", price: 6.50 },
+          { name: "Concabra", description: "Tomate, lechuga, cebolla, confitura de tomate, 150gr de carne rellena de rulo de cabra", price: 6.50 },
+        ]
+      },
+      {
+        name: "Gourmets",
+        items: [
+          { name: "Buey", description: "200gr carne de buey, tomate, lechuga, cebolla, chédar fundido, pepinillos", price: 7.50 },
+          { name: "Americana", description: "150gr ternera macerada con barbacoa y mostaza, tomate, lechuga, cebolla, queso chédar fundido, pepinillos", price: 7.50 },
+          { name: "Chori-burguer", description: "150gr mezcla de chorizo fresco y paleta de cerdo, tomate, lechuga, cebolla rebozada, huevo frito, queso manchego, salsa argentina", price: 7.50 },
+          { name: "Baconcita", description: "150gr mezcla de bacón y paleta de cerdo, tomate, lechuga, salsa queso chédar, huevo duro, cebolla rebozada, tira de bacón crujiente", price: 7.50 },
+          { name: "Jamburguesa", description: "150gr mezcla de jamón serrano y paleta de cerdo, tomate, huevo frito, queso manchego, pimiento morrón", price: 7.50 },
+          { name: "Vegetal crujiente", description: "Mezcla de garbanzos, berenjena, calabacín, cebolla, crema de pimientos del piquillo", price: 6.00 },
+          { name: "Murciana", description: "150gr mezcla de lomo adobado y longaniza fresca, tomate, lechuga, pimientos asados, queso manchego, huevo frito, fiambre de lomo a la plancha", price: 7.50 },
+          { name: "Parmesana crujiente", description: "Mezcla de patata y queso parmesano, salsa de queso parmesano trufada, huevo frito", price: 6.00 },
+          { name: "Foie", description: "180gr paleta de cerdo rellena con mousse de pato, cebolla caramelizada al oporto", price: 7.50 },
+          { name: "Otomana", description: "150gr mezcla de carne kebab y paleta de cerdo, tomate, lechuga, pimiento, salsa de yogurt, maíz, queso feta", price: 7.50 },
         ]
       }
     ]
@@ -238,12 +262,23 @@ export const menuZones: MenuZone[] = [
     image: "https://images.unsplash.com/photo-1630384060421-cb20d0e0649d?w=400&h=300&fit=crop",
     categories: [
       {
-        name: "Patatas",
+        name: "Patatas Locas (6,00€)",
         items: [
-          { name: "Patatas Bravas", description: "Con salsa brava casera", price: 4.50 },
-          { name: "Patatas Alioli", description: "Con alioli casero", price: 4.50 },
-          { name: "Patatas con Queso", description: "Queso cheddar fundido", price: 5.00 },
-          { name: "Patatas Deluxe", description: "Todo: queso, bacon, cebolla, salsas", price: 6.50 },
+          { name: "Clásicas", description: "Patata, queso, bacón, salsa clásica", price: 6.00 },
+          { name: "Pollo", description: "Patata, queso, pollo asado, salsa barbacoa", price: 6.00 },
+          { name: "Turkas", description: "Patata, queso, cebolla, carne kebab, salsa kebab", price: 6.00 },
+          { name: "Salchilocas", description: "Patata, queso, salchichas frankfurt, cebolla crujiente, salsa miel y mostaza", price: 6.00 },
+          { name: "Calabacín", description: "Patata, queso, calabacín, salsa clásica", price: 6.00 },
+          { name: "Vegetales", description: "Patata, queso, pimiento rojo y verde, cebolla, calabacín, berenjena, salsa clásica", price: 6.00 },
+        ]
+      },
+      {
+        name: "Raciones de Patatas",
+        items: [
+          { name: "Patatas fritas", price: 2.00 },
+          { name: "Patatas bravas", price: 2.50 },
+          { name: "Patatas alioli", price: 2.50 },
+          { name: "Patatas diablo 🌶️", price: 3.00 },
         ]
       }
     ]
