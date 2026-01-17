@@ -155,12 +155,10 @@
     font-family: 'Patrick Hand', cursive;
   }
 
-  /* Floating animation */
+  /* Floating animation - simplified */
   @keyframes float {
-    0%, 100% { transform: translateY(0) rotate(0deg); }
-    25% { transform: translateY(-10px) rotate(2deg); }
-    50% { transform: translateY(-5px) rotate(-1deg); }
-    75% { transform: translateY(-15px) rotate(1deg); }
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
   }
 
   .animate-float {
@@ -177,21 +175,12 @@
     animation: wiggle 0.5s ease-in-out;
   }
 
-  /* Pulse glow animation */
-  @keyframes pulse-glow {
-    0%, 100% { 
-      box-shadow: 0 0 20px hsl(var(--primary) / 0.4);
-    }
-    50% { 
-      box-shadow: 0 0 40px hsl(var(--primary) / 0.6), 0 0 60px hsl(var(--primary) / 0.3);
-    }
-  }
-
+  /* Pulse glow animation - simplified for mobile */
   .animate-pulse-glow {
-    animation: pulse-glow 2s ease-in-out infinite;
+    box-shadow: 0 0 20px hsl(var(--primary) / 0.4);
   }
 
-  /* Phone button animation */
+  /* Phone button animation - only on desktop */
   @keyframes ring {
     0%, 100% { transform: rotate(0deg); }
     10% { transform: rotate(15deg); }
@@ -202,7 +191,13 @@
   }
 
   .animate-ring {
-    animation: ring 2s ease-in-out infinite;
+    animation: none;
+  }
+
+  @media (min-width: 768px) {
+    .animate-ring {
+      animation: ring 2s ease-in-out infinite;
+    }
   }
 
   /* Gradient text */
@@ -256,7 +251,7 @@
     );
   }
 
-  /* Neon text effect */
+  /* Neon text effect - original with animation */
   .neon-text {
     color: hsl(var(--chicho-gold-light));
     text-shadow: 
@@ -266,6 +261,24 @@
       0 0 40px hsl(var(--chicho-gold) / 0.3);
     animation: neon-pulse 2s ease-in-out infinite alternate;
   }
+
+  /* Optimized neon text - static on mobile, animated on desktop */
+  .neon-text-optimized {
+    color: hsl(var(--chicho-gold-light));
+    text-shadow: 
+      0 0 5px hsl(var(--chicho-gold-light) / 0.6),
+      0 0 15px hsl(var(--chicho-gold) / 0.3);
+  }
+
+  @media (min-width: 768px) {
+    .neon-text-optimized {
+      text-shadow: 
+        0 0 5px hsl(var(--chicho-gold-light) / 0.8),
+        0 0 10px hsl(var(--chicho-gold-light) / 0.6),
+        0 0 20px hsl(var(--chicho-gold-light) / 0.4);
+      animation: neon-pulse 2s ease-in-out infinite alternate;
+    }
+  }
 }
 
 @keyframes neon-pulse {
@@ -273,15 +286,13 @@
     text-shadow: 
       0 0 5px hsl(var(--chicho-gold-light) / 0.8),
       0 0 10px hsl(var(--chicho-gold-light) / 0.6),
-      0 0 20px hsl(var(--chicho-gold-light) / 0.4),
-      0 0 40px hsl(var(--chicho-gold) / 0.3);
+      0 0 20px hsl(var(--chicho-gold-light) / 0.4);
   }
   to {
     text-shadow: 
       0 0 10px hsl(var(--chicho-gold-light) / 1),
       0 0 20px hsl(var(--chicho-gold-light) / 0.8),
-      0 0 30px hsl(var(--chicho-gold-light) / 0.6),
-      0 0 50px hsl(var(--chicho-gold) / 0.5);
+      0 0 30px hsl(var(--chicho-gold-light) / 0.6);
   }
 }
 
