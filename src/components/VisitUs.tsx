@@ -5,10 +5,10 @@ const VisitUs = () => {
   const phoneNumber = "tel:+34968742743";
 
   return (
-    <section className="py-16 px-4 bg-secondary/20">
+    <section className="py-16 px-4 bg-background">
       <div className="max-w-5xl mx-auto">
         <motion.h2
-          className="font-architects text-3xl md:text-4xl text-primary mb-10 text-center"
+          className="font-architects text-5xl md:text-6xl lg:text-7xl neon-text mb-12 text-center"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}

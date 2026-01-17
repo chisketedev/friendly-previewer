@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { ArrowLeft } from "lucide-react";
 import Header from "@/components/Header";
 import FloatingCallButton from "@/components/FloatingCallButton";
+import FoodPatternBackground from "@/components/FoodPatternBackground";
 import { getZoneBySlug, RESTAURANT_NAME } from "@/data/menuData";
 
 const MenuPage = () => {
@@ -16,8 +17,9 @@ const MenuPage = () => {
   }, [zone]);
   if (!menuZone) {
     return (
-      <div className="min-h-screen bg-background flex items-center justify-center">
-        <div className="text-center">
+      <div className="min-h-screen bg-background relative flex items-center justify-center">
+        <FoodPatternBackground />
+        <div className="text-center relative z-10">
           <h1 className="font-architects text-4xl text-primary mb-4">Zona no encontrada</h1>
           <Link to="/" className="text-primary hover:underline">Volver al inicio</Link>
         </div>
@@ -26,7 +28,8 @@ const MenuPage = () => {
   }
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background relative">
+      <FoodPatternBackground />
       <Header />
       <main className="py-8 px-4">
         <div className="max-w-4xl mx-auto">
