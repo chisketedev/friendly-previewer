@@ -216,7 +216,7 @@ export const menuZones: MenuZone[] = [
         ]
       },
       {
-        name: "Panpizza (2,50€)",
+        name: "Panpizza",
         items: [
           { name: "Bolognesa", description: "Queso, orégano, salsa boloñesa con carne picada", price: 2.50 },
           { name: "Jamón", description: "Tomate, queso, orégano, jamón york", price: 2.50 },
@@ -283,7 +283,7 @@ export const menuZones: MenuZone[] = [
     image: "https://images.unsplash.com/photo-1630384060421-cb20d0e0649d?w=400&h=300&fit=crop",
     categories: [
       {
-        name: "Patatas Locas (6,00€)",
+        name: "Patatas Locas",
         items: [
           { name: "Clásicas", description: "Patata, queso, bacón, salsa clásica", price: 6.00 },
           { name: "Pollo", description: "Patata, queso, pollo asado, salsa barbacoa", price: 6.00 },
@@ -299,7 +299,7 @@ export const menuZones: MenuZone[] = [
           { name: "Patatas fritas", price: 2.00 },
           { name: "Patatas bravas", price: 2.50 },
           { name: "Patatas alioli", price: 2.50 },
-          { name: "Patatas diablo 🌶️", price: 3.00 },
+          { name: "Patatas diablo", description: "Muy picantes", price: 3.00 },
         ]
       }
     ]
