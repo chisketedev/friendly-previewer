@@ -37,6 +37,15 @@ export const menuZones: MenuZone[] = [
     image: "https://images.unsplash.com/photo-1541014741259-de529411b96a?w=400&h=300&fit=crop",
     categories: [
       {
+        name: "Ensaladas",
+        items: [
+          { name: "De la casa", description: "Tomate, lechuga, atún, maíz, aceitunas, salsa rosa", price: 3.50 },
+          { name: "Mixta", description: "Tomate, lechuga, jamón york, queso, salsa rosa", price: 3.50 },
+          { name: "César", description: "Lechuga, croutons, nueces, parmesano, salsa césar", price: 4.50 },
+          { name: "César con pollo", description: "Lechuga, croutons, nueces, parmesano, pechuga de pollo a la plancha, salsa césar", price: 6.00 },
+        ]
+      },
+      {
         name: "Clásicos",
         items: [
           { name: "Boquerones en vinagre", description: "6 unidades", price: 2.50 },
@@ -204,6 +213,18 @@ export const menuZones: MenuZone[] = [
         items: [
           { name: "Panada vegetal", description: "Tomate, queso, orégano, salteado de berenjena, calabacín, cebolla y parmesano. Para 2 personas", price: 12.50 },
           { name: "Panada de carne", description: "Tomate, queso, orégano, salteado de lomo, pimiento, cebolla y parmesano, ajo, aceite picante. Para 2 personas", price: 12.50 },
+        ]
+      },
+      {
+        name: "Panpizza (2,50€)",
+        items: [
+          { name: "Bolognesa", description: "Queso, orégano, salsa boloñesa con carne picada", price: 2.50 },
+          { name: "Jamón", description: "Tomate, queso, orégano, jamón york", price: 2.50 },
+          { name: "Atún", description: "Tomate, queso, orégano, atún", price: 2.50 },
+          { name: "Anchoas", description: "Tomate, queso, orégano, anchoas", price: 2.50 },
+          { name: "Sobrasada", description: "Tomate, queso, orégano, sobrasada", price: 2.50 },
+          { name: "Salami", description: "Tomate, queso, orégano, salami", price: 2.50 },
+          { name: "Barbacoa", description: "Queso, orégano, carne picada, salsa barbacoa", price: 2.50 },
         ]
       }
     ]
