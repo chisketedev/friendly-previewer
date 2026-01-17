@@ -338,7 +338,7 @@ export const menuZones: MenuZone[] = [
     emoji: "🌭",
     description: "Hot dogs al estilo Chicho",
     color: "from-red-500 to-orange-600",
-    image: "/src/assets/hotdog-zone.png",
+    image: "/images/hotdog-zone.jpg",
     categories: [
       {
         name: "Perritos",
