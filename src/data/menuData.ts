@@ -125,20 +125,85 @@ export const menuZones: MenuZone[] = [
     image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400&h=300&fit=crop",
     categories: [
       {
+        name: "Pizzas Básicas",
+        items: [
+          { name: "Jamón", description: "Tomate, queso, orégano, jamón york, bacón", prices: { small: 4.50, medium: 7.00, large: 9.50 } },
+          { name: "Margarita", description: "Tomate, queso, orégano", prices: { small: 4.50, medium: 7.00, large: 9.50 } },
+          { name: "Salami", description: "Tomate, queso, orégano, salami", prices: { small: 4.50, medium: 7.00, large: 9.50 } },
+          { name: "Fungi", description: "Tomate, queso, orégano, champiñón", prices: { small: 4.50, medium: 7.00, large: 9.50 } },
+        ]
+      },
+      {
         name: "Pizzas Clásicas",
         items: [
-          { name: "Margarita", description: "Tomate y mozzarella", prices: { small: 6.50, medium: 9.50, large: 12.50 } },
-          { name: "4 Quesos", description: "Mozzarella, gorgonzola, parmesano, emmental", prices: { small: 8.00, medium: 11.00, large: 14.00 } },
-          { name: "Jamón York", description: "Tomate, mozzarella y jamón york", prices: { small: 7.00, medium: 10.00, large: 13.00 } },
-          { name: "Hawaiana", description: "Tomate, mozzarella, jamón, piña", prices: { small: 7.50, medium: 10.50, large: 13.50 } },
+          { name: "4 Quesos", description: "Tomate, orégano, mozzarella, emmental, chédar, gouda", prices: { small: 5.00, medium: 7.75, large: 10.50 } },
+          { name: "Tonno", description: "Tomate, queso, orégano, atún, cebolla", prices: { small: 5.00, medium: 7.75, large: 10.50 } },
+          { name: "Napolitana", description: "Tomate, queso, orégano, anchoas, aceitunas, pimiento morrón", prices: { small: 5.00, medium: 7.75, large: 10.50 } },
+          { name: "Barakaldo", description: "Tomate, queso, orégano, atún, anchoas, cebolla, aceitunas", prices: { small: 5.00, medium: 7.75, large: 10.50 } },
+          { name: "Pepperoni", description: "Tomate, queso, orégano, jamón york, pepperoni", prices: { small: 5.00, medium: 7.75, large: 10.50 } },
+          { name: "Mallorquina", description: "Tomate, queso, orégano, sobrasada", prices: { small: 5.00, medium: 7.75, large: 10.50 } },
+          { name: "Roquefort", description: "Tomate, queso, orégano, queso roquefort", prices: { small: 5.00, medium: 7.75, large: 10.50 } },
+          { name: "Cangrejo", description: "Tomate, queso, orégano, pinzas de cangrejo, bocas de mar", prices: { small: 5.00, medium: 7.75, large: 10.50 } },
+          { name: "Bacón", description: "Tomate, queso, orégano, bacón, cebolla", prices: { small: 5.00, medium: 7.75, large: 10.50 } },
+          { name: "Barbacoa", description: "Salsa barbacoa, queso, orégano, carne picada", prices: { small: 5.00, medium: 7.75, large: 10.50 } },
+          { name: "Pollo", description: "Tomate, queso, orégano, pollo salteado con especias", prices: { small: 5.00, medium: 7.75, large: 10.50 } },
+          { name: "Pollocream", description: "Nata, queso, orégano, pollo salteado con especias", prices: { small: 5.00, medium: 7.75, large: 10.50 } },
+          { name: "Mazorquita", description: "Salsa barbacoa, queso, orégano, bacón, maíz", prices: { small: 5.00, medium: 7.75, large: 10.50 } },
+          { name: "Cipolla", description: "Tomate, queso, orégano, cebolla asada", prices: { small: 5.00, medium: 7.75, large: 10.50 } },
+          { name: "Hawaiana", description: "Tomate, queso, orégano, jamón york, piña", prices: { small: 5.00, medium: 7.75, large: 10.50 } },
+          { name: "Bolognesa", description: "Tomate, queso, orégano, salsa boloñesa", prices: { small: 5.00, medium: 7.75, large: 10.50 } },
+          { name: "Carbonara", description: "Nata, queso, orégano, jamón york, cebolla, champiñón", prices: { small: 5.00, medium: 7.75, large: 10.50 } },
+          { name: "Carbonara clásica", description: "Nata, queso, orégano, bacón, cebolla, champiñón", prices: { small: 5.00, medium: 7.75, large: 10.50 } },
+          { name: "Florentina", description: "Tomate, queso, orégano, jamón york, champiñón, aceitunas", prices: { small: 5.00, medium: 7.75, large: 10.50 } },
+          { name: "Espinacas", description: "Nata, queso, orégano, salteado de espinacas con piñones", prices: { small: 5.00, medium: 7.75, large: 10.50 } },
+          { name: "Vegetal", description: "Tomate, queso, orégano, rodajas de tomate, calabacín, pimiento, cebolla, champiñón, alcaparras", prices: { small: 5.00, medium: 7.75, large: 10.50 } },
+          { name: "Rústica", description: "Tomate, queso, orégano, alcachofas, aceitunas, champiñón, pimiento morrón", prices: { small: 5.00, medium: 7.75, large: 10.50 } },
+          { name: "Al-yovo", description: "Tomate, queso, orégano, jamón york, huevo", prices: { small: 5.00, medium: 7.75, large: 10.50 } },
+          { name: "Mixta", description: "Tomate, queso, orégano, jamón york, atún", prices: { small: 5.00, medium: 7.75, large: 10.50 } },
+          { name: "Simpática", description: "Tomate, queso, orégano, jamón york, champiñón", prices: { small: 5.00, medium: 7.75, large: 10.50 } },
+          { name: "Fusión", description: "Tomate, queso, orégano, atún, bacón", prices: { small: 5.00, medium: 7.75, large: 10.50 } },
+          { name: "Alemana", description: "Tomate, queso, orégano, salchichas frankfurt, bacón, salsa miel y mostaza", prices: { small: 5.00, medium: 7.75, large: 10.50 } },
+          { name: "Mediterránea", description: "Tomate, queso, orégano, lomo, huevo, pimiento", prices: { small: 5.00, medium: 7.75, large: 10.50 } },
         ]
       },
       {
         name: "Pizzas Especiales",
         items: [
-          { name: "Barbacoa", description: "Pollo, bacon, cebolla caramelizada, salsa BBQ", prices: { small: 8.50, medium: 11.50, large: 14.50 } },
-          { name: "Carbonara", description: "Nata, bacon, cebolla, champiñón", prices: { small: 8.00, medium: 11.00, large: 14.00 } },
-          { name: "Chicho Special", description: "La favorita del chef - sorpresa del día", prices: { small: 9.00, medium: 12.00, large: 15.00 } },
+          { name: "Sabrosa", description: "Tomate, queso, orégano, sobrasada, roquefort, alcaparras", prices: { small: 5.50, medium: 8.50, large: 11.50 } },
+          { name: "Especial", description: "Tomate, queso, orégano, jamón york, atún, salami, cebolla, ajo, picante", prices: { small: 5.00, medium: 7.75, large: 10.50 } },
+          { name: "Kebab", description: "Tomate, queso, orégano, cebolla, carne y salsa kebab", prices: { small: 5.50, medium: 8.50, large: 11.50 } },
+          { name: "Caprichosa", description: "Tomate, queso, orégano, jamón york, atún, anchoas, alcaparras, aceitunas", prices: { small: 5.50, medium: 8.50, large: 11.50 } },
+          { name: "4 Estaciones", description: "Tomate, queso, orégano, jamón york, bacón, champiñón, alcachofas, aceitunas, pimiento morrón", prices: { small: 5.50, medium: 8.50, large: 11.50 } },
+        ]
+      },
+      {
+        name: "Pizzas de Marisco",
+        items: [
+          { name: "Marisco", description: "Tomate, queso, orégano, calamar, mejillones, gambas, bocas de mar", prices: { small: 5.50, medium: 8.50, large: 11.50 } },
+          { name: "Frutti di mare", description: "Nata, orégano, calamar, bocas, gambas, mezcla de 4 quesos", prices: { small: 5.50, medium: 8.50, large: 11.50 } },
+          { name: "Marinera", description: "Tomate, queso, orégano, atún, gambas, bocas de mar, aceitunas", prices: { small: 5.50, medium: 8.50, large: 11.50 } },
+          { name: "Salmón", description: "Nata, queso, orégano, salmón fresco, gambas", prices: { small: 5.50, medium: 8.50, large: 11.50 } },
+        ]
+      },
+      {
+        name: "Pizzas Premium",
+        items: [
+          { name: "Española", description: "Tomate, queso, orégano, jamón serrano, huevo, pimiento rojo y verde", prices: { small: 5.50, medium: 8.50, large: 11.50 } },
+          { name: "Romántica", description: "Tomate, queso, orégano, jamón york, gambas, cebolla", prices: { small: 5.50, medium: 8.50, large: 11.50 } },
+          { name: "Picante", description: "Tomate, queso, orégano, lomo, aceite picante", prices: { small: 5.50, medium: 8.50, large: 11.50 } },
+          { name: "Primavera", description: "Tomate, queso, orégano, jamón serrano, gambas", prices: { small: 5.50, medium: 8.50, large: 11.50 } },
+          { name: "Chori-nata", description: "Nata, orégano, chorizo, mezcla de 4 quesos", prices: { small: 5.50, medium: 8.50, large: 11.50 } },
+          { name: "Mexicana", description: "Tomate, queso, orégano, fríjoles, cebolla, lomo, aceite picante", prices: { small: 6.00, medium: 9.00, large: 12.50 } },
+          { name: "Murciana", description: "Tomate, queso, orégano, lomo, salchicha, morcilla, chorizo", prices: { small: 6.00, medium: 9.00, large: 12.50 } },
+          { name: "Pirata", description: "Tomate, queso, orégano, salteado de champiñón, cebolla y pimiento rojo", prices: { small: 6.00, medium: 9.00, large: 12.50 } },
+          { name: "Zíngara", description: "Tomate, queso, orégano, salteado de lomo, pimiento y cebolla", prices: { small: 6.00, medium: 9.00, large: 12.50 } },
+        ]
+      },
+      {
+        name: "Pizzas Panadas",
+        items: [
+          { name: "Panada vegetal", description: "Tomate, queso, orégano, salteado de berenjena, calabacín, cebolla y parmesano. Para 2 personas", price: 12.50 },
+          { name: "Panada de carne", description: "Tomate, queso, orégano, salteado de lomo, pimiento, cebolla y parmesano, ajo, aceite picante. Para 2 personas", price: 12.50 },
         ]
       }
     ]
