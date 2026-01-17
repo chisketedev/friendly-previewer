@@ -1,15 +1,19 @@
 import { useParams, Link } from "react-router-dom";
+import { useEffect } from "react";
 import { motion } from "framer-motion";
 import { ArrowLeft } from "lucide-react";
 import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 import FloatingCallButton from "@/components/FloatingCallButton";
-import { getZoneBySlug } from "@/data/menuData";
+import { getZoneBySlug, RESTAURANT_NAME } from "@/data/menuData";
 
 const MenuPage = () => {
   const { zone } = useParams<{ zone: string }>();
   const menuZone = getZoneBySlug(zone || "");
 
+  // Scroll to top when page loads
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [zone]);
   if (!menuZone) {
     return (
       <div className="min-h-screen bg-background flex items-center justify-center">
@@ -95,7 +99,14 @@ const MenuPage = () => {
           ))}
         </div>
       </main>
-      <Footer />
+      
+      {/* Simple footer for menu pages */}
+      <footer className="bg-secondary/30 border-t border-border py-6 text-center">
+        <p className="font-patrick text-muted-foreground text-sm">
+          © {new Date().getFullYear()} {RESTAURANT_NAME}. Todos los derechos reservados.
+        </p>
+      </footer>
+      
       <FloatingCallButton />
     </div>
   );
