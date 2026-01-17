@@ -71,15 +71,6 @@ const Hero = () => {
               whileHover={{ scale: 1.05, rotate: 5 }}
               transition={{ type: "spring", stiffness: 300 }}
             />
-            {/* Welcome bubble */}
-            <motion.div
-              className="absolute -right-4 top-4 md:-right-8 md:top-8 bg-chicho-gold text-chicho-dark px-4 py-2 rounded-full font-patrick text-sm md:text-base font-bold shadow-lg"
-              initial={{ opacity: 0, scale: 0 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ delay: 0.8, type: "spring" }}
-            >
-              ¡Bienvenido!
-            </motion.div>
           </motion.div>
 
           <motion.p

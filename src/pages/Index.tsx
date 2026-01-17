@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import StickmanWorld from "@/components/stickman/StickmanWorld";
+import VisitUs from "@/components/VisitUs";
 import Footer from "@/components/Footer";
 import FloatingCallButton from "@/components/FloatingCallButton";
 
@@ -13,6 +14,7 @@ const Index = () => {
         <div id="menu-zones">
           <StickmanWorld />
         </div>
+        <VisitUs />
       </main>
       <Footer />
       <FloatingCallButton />
