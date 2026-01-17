@@ -37,14 +37,80 @@ export const menuZones: MenuZone[] = [
     image: "https://images.unsplash.com/photo-1541014741259-de529411b96a?w=400&h=300&fit=crop",
     categories: [
       {
-        name: "Entrantes",
+        name: "Clásicos",
         items: [
-          { name: "Croquetas Caseras", description: "4 unidades - Jamón o bacalao", price: 5.00 },
-          { name: "Nachos con Queso", description: "Con guacamole y pico de gallo", price: 7.00 },
-          { name: "Tequeños", description: "Palitos de queso venezolanos", price: 5.50 },
-          { name: "Alitas de Pollo BBQ", price: 6.50 },
-          { name: "Tabla de Quesos", price: 9.00 },
-          { name: "Tabla de Ibéricos", price: 12.00 },
+          { name: "Boquerones en vinagre", description: "6 unidades", price: 2.50 },
+          { name: "Ensaladilla rusa", price: 2.50 },
+          { name: "Ensaladilla de marisco", price: 3.50 },
+          { name: "Ensaladilla de cangrejo", price: 3.50 },
+          { name: "Marineras", description: "Unidad", price: 2.50 },
+          { name: "Rollitos de salmón", description: "Unidad", price: 2.50 },
+          { name: "Sepia", description: "Plato", price: 10.00 },
+          { name: "Caballitos", description: "Unidad", price: 2.00 },
+          { name: "Calamares a la romana", description: "6 unidades", price: 5.00 },
+          { name: "Almejas", price: 7.00 },
+          { name: "Pinzas de cangrejo", price: 3.00 },
+          { name: "Seta y champiñón", description: "Por persona", price: 1.50 },
+          { name: "Oreja a la plancha", description: "Por persona", price: 2.00 },
+          { name: "Piruletas de chicho", description: "Unidad", price: 2.00 },
+          { name: "Tigres", description: "Unidad", price: 1.50 },
+          { name: "Chorizo a la sidra", price: 2.00 },
+        ]
+      },
+      {
+        name: "Montaditos",
+        items: [
+          { name: "Montadito de lomo", price: 1.50 },
+          { name: "Montadito de salchicha", price: 1.50 },
+          { name: "Montadito de morcilla", price: 1.50 },
+          { name: "Montadito de tocino", price: 1.50 },
+          { name: "Montadito de bacón", price: 1.50 },
+        ]
+      },
+      {
+        name: "Croquetas",
+        items: [
+          { name: "Croquetas de jamón", description: "6 unidades", price: 3.00 },
+          { name: "Croquetas de pollo", description: "6 unidades", price: 3.00 },
+          { name: "Croquetas de york-queso", description: "6 unidades", price: 3.00 },
+          { name: "Croquetas de merluza", description: "6 unidades", price: 3.00 },
+          { name: "Croquetas de marisco", description: "6 unidades", price: 3.00 },
+          { name: "Croquetas de gambas al ajillo", description: "6 unidades", price: 3.00 },
+        ]
+      },
+      {
+        name: "Tostas y Quesadillas",
+        items: [
+          { name: "Tosta de rulo de cabra", description: "Con confitura de tomate", price: 2.00 },
+          { name: "Tosta de foie (micuit)", description: "Con reducción de oporto", price: 2.00 },
+          { name: "Quesadilla de pollo", description: "Pollo, queso, salsa", price: 5.00 },
+          { name: "Quesadilla de tomate", description: "Tomate, queso, especias", price: 5.00 },
+          { name: "Quesadilla imperial", description: "Pollo, queso, especias, salsa kebab", price: 5.00 },
+        ]
+      },
+      {
+        name: "Fingers y Nuggets",
+        items: [
+          { name: "Nuggets de pollo", description: "6 unidades, con salsa barbacoa", price: 4.00 },
+          { name: "Nuggets vegetales", description: "6 unidades, con crema de piquillos", price: 4.00 },
+          { name: "Fingers de pollo", description: "6 unidades", price: 4.00 },
+          { name: "Fingers de queso", description: "6 unidades", price: 4.00 },
+        ]
+      },
+      {
+        name: "Alitas y Snacks",
+        items: [
+          { name: "Alitas de pollo barbacoa", description: "3 unidades", price: 3.00 },
+          { name: "Alitas de pollo tex-mex", description: "3 unidades, ligeramente picantes", price: 3.00 },
+          { name: "Aros de cebolla", price: 3.00 },
+          { name: "Nachos", description: "Con una salsa a elegir", price: 3.00 },
+        ]
+      },
+      {
+        name: "Salsas",
+        items: [
+          { name: "Salsas para nachos", description: "Chédar, roja mejicana, ranchera", price: 1.00 },
+          { name: "Salsas para acompañar", description: "Barbacoa, alioli, brava, miel y mostaza, kebab, argentina, americana, cóctel", price: 1.00 },
         ]
       }
     ]
