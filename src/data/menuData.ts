@@ -144,7 +144,7 @@ export const menuZones: MenuZone[] = [
     emoji: "🌭",
     description: "Hot dogs al estilo Chicho",
     color: "from-red-500 to-orange-600",
-    image: "https://images.unsplash.com/photo-1612392062631-94af99e4d0e7?w=400&h=300&fit=crop",
+    image: "https://images.unsplash.com/photo-1619740455993-9e612b50454f?w=400&h=300&fit=crop",
     categories: [
       {
         name: "Perritos",
