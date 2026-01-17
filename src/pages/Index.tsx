@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
+import MenuDivider from "@/components/MenuDivider";
 import StickmanWorld from "@/components/stickman/StickmanWorld";
 import VisitUs from "@/components/VisitUs";
 import Footer from "@/components/Footer";
@@ -11,6 +12,7 @@ const Index = () => {
       <Header />
       <main>
         <Hero />
+        <MenuDivider />
         <div id="menu-zones">
           <StickmanWorld />
         </div>
